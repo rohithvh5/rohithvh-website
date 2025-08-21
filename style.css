@@ -1,0 +1,48 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f6f8fa;
+    margin: 0;
+    color: #222;
+}
+header {
+    text-align: center;
+    padding: 2em 0 1em 0;
+    background: #fff;
+}
+.hero-img {
+    max-width: 350px;
+    border-radius: 16px;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+section {
+    margin: 2em auto;
+    max-width: 700px;
+    background: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.11);
+}
+.links a, .documents a {
+    margin-right: 16px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+}
+.contact input, .contact textarea {
+    display: block;
+    width: 98%;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.contact button {
+    padding: 0.5em 2em;
+    background: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
