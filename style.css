@@ -1,48 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f6f8fa;
-    margin: 0;
-    color: #222;
+  font-family: 'Roboto', sans-serif;
+  background: #fefefe;
+  color: #1a1a1a;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
 }
-header {
-    text-align: center;
-    padding: 2em 0 1em 0;
-    background: #fff;
+a {
+  color: #2d74f7;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
-.hero-img {
-    max-width: 350px;
-    border-radius: 16px;
+a:hover {
+  text-decoration: underline;
 }
-h1 {
-    font-size: 2em;
-    margin-bottom: 0;
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 2rem auto 4rem;
 }
-section {
-    margin: 2em auto;
-    max-width: 700px;
-    background: #fff;
-    padding: 2em;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.11);
+header.hero {
+  text-align: center;
+  margin-top: 3rem;
 }
-.links a, .documents a {
-    margin-right: 16px;
-    text-decoration: none;
-    color: #2c3e50;
-    font-weight: bold;
+img.hero-img {
+  width: 220px;
+  border-radius: 16px;
+  box-shadow: 0 12px 14px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+  object-fit: cover;
 }
-.contact input, .contact textarea {
-    display: block;
-    width: 98%;
-    margin-bottom: 1em;
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+header.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #0b3d91;
+  margin-bottom: 0.3rem;
 }
-.contact button {
-    padding: 0.5em 2em;
-    background: #2c3e50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
+header.hero p {
+  font-size: 1.15rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 3rem;
+}
+.button-primary {
+  background-color: #2d74f7;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 10px rgba(45,116,247,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  user-select: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 16px rgba(45,116,247,0.45);
+}
+
+/* Square, equal-size buttons */
+.button-square {
+  width: 180px;
+  height: 60px;
+  border-radius: 10px;
+  padding: 0;
+  line-height: 1.1;
+}
+
+section.about {
+  background: #fafafa;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+section.about h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #0b3d91;
+  text-align: center;
+}
+section.about p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 720px;
+  margin: 0 auto;
+  white-space: pre-line;
+}
+
+section.links {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+section.links h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #0b3d91;
+}
+.link-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.link-buttons a {
+  background-color: #2d74f7;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-size: 1rem;
+  box-shadow: 0 6px 10px rgba(45, 116, 247, 0.3);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 150px;
+  justify-content: center;
+  font-weight: 600;
+}
+.link-buttons a:hover {
+  box-shadow: 0 10px 16px rgba(45, 116, 247, 0.5);
+  transform: translateY(-3px);
+}
+svg.icon {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  img.hero-img {
+    width: 160px;
+  }
+  .button-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .link-buttons {
+    gap: 14px;
+  }
+  section.about p {
+    font-size: 1rem;
+  }
 }

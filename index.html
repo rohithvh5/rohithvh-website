@@ -1,49 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Rohith V.H - Digital Marketer & Entrepreneur</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rohith V.H | Digital Marketing | Client Relationship Manager | Crypto Trader</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto&display=swap" rel="stylesheet" />
+
+  <!-- AOS Animation Library CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #fefefe;
+      color: #1a1a1a;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 3rem;
+    }
+    a {
+      color: #2d74f7;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 2rem auto 4rem;
+    }
+    header.hero {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    img.hero-img {
+      width: 220px;
+      border-radius: 16px;
+      box-shadow: 0 12px 14px rgba(0, 0, 0, 0.08);
+      margin-bottom: 1.5rem;
+      object-fit: cover;
+    }
+    header.hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #0b3d91;
+      margin-bottom: 0.3rem;
+    }
+    header.hero p {
+      font-size: 1.15rem;
+      color: #444;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      margin-bottom: 3rem;
+    }
+    .button-primary {
+      background-color: #2d74f7;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 10px rgba(45,116,247,0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      user-select: none;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .button-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 16px rgba(45,116,247,0.45);
+    }
+
+    /* Square, equal-size buttons */
+    .button-square {
+      width: 180px;
+      height: 60px;
+      border-radius: 10px;
+      padding: 0;
+      line-height: 1.1;
+    }
+
+    section.about {
+      background: #fafafa;
+      padding: 2.5rem 2rem;
+      border-radius: 16px;
+      margin-bottom: 3rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    }
+    section.about h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #0b3d91;
+      text-align: center;
+    }
+    section.about p {
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 720px;
+      margin: 0 auto;
+      white-space: pre-line; /* Preserve new lines */
+    }
+
+    section.links {
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    section.links h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: #0b3d91;
+    }
+    .link-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .link-buttons a {
+      background-color: #2d74f7;
+      color: #fff;
+      padding: 12px 22px;
+      border-radius: 30px;
+      font-size: 1rem;
+      box-shadow: 0 6px 10px rgba(45, 116, 247, 0.3);
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 150px;
+      justify-content: center;
+      font-weight: 600;
+    }
+    .link-buttons a:hover {
+      box-shadow: 0 10px 16px rgba(45, 116, 247, 0.5);
+      transform: translateY(-3px);
+    }
+
+    svg.icon {
+      width: 20px;
+      height: 20px;
+      fill: white;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 600px) {
+      img.hero-img {
+        width: 160px;
+      }
+      .button-group {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .link-buttons {
+        gap: 14px;
+      }
+      section.about p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="graduation-crescent.jpg" alt="Graduation Ceremony" class="hero-img">
-        <h1>Rohith V.H</h1>
-        <p>Digital Marketing | Entrepreneur | crypto trader</p>
-    </header>
-    <section class="about">
-        <h2>About</h2>
-        <p>Client relationship manager with
-MBA and engineering
-background. 95% satisfaction
-rate across 150+ clients,
-achieving 60% retention growth
-  I offer strong skills in customer
-analytics, relationship
-management, and cross-
-departmental coordination.</p>
+
+  <header class="hero" data-aos="fade-up">
+    <img src="graduation-crescent.jpg" alt="Rohith V.H Graduation Photo" class="hero-img" />
+    <h1>Rohith V.H</h1>
+    <p>Digital Marketing | Client Relationship Manager | Crypto Trader</p>
+
+    <div class="button-group">
+      <a href="https://drive.google.com/file/d/1UuDsUdLyP8f5d1_JhE4upOZNIOIcgkco/view?usp=drivesdk" target="_blank" class="button-primary button-square">View Resume</a>
+      <a href="https://drive.google.com/file/d/1z8lEbYxzeob927HOkQCbYMVbNaapdeML/view?usp=drivesdk" target="_blank" class="button-primary button-square">Portfolio</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about" data-aos="fade-right">
+      <h2>About Me</h2>
+      <p>
+        - Client relationship manager with MBA and engineering background. 95% satisfaction rate across 150+ clients, achieving 60% retention growth.
+        I offer strong skills in customer analytics, relationship management, and cross-departmental coordination.
+        - Additionally, I have extensive experience in crypto trading, applying deep market analysis and risk management strategies to maximize returns
+    
+        
+      </p>
     </section>
-    <section class="links">
-        <h2>Connect</h2>
-        <a href="https://www.linkedin.com/in/rohith-vh-6959671b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a>
-        <a href="http://wa.me/qr/K5U67YYVCSVVF1" target="_blank">WhatsApp</a>
-        <a href="https://www.instagram.com/rohith_vh_?igsh=ZmRpanFicmY5MzEy&utm_source=qr" target="_blank">Instagram</a>
-        <a href="mailto:rohithvh1123@gmail.com">Email</a>
+
+    <section class="links" data-aos="fade-left">
+      <h2>Connect With Me</h2>
+      <div class="link-buttons">
+        <a href="https://www.linkedin.com/in/rohith-vh-6959671b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" aria-label="LinkedIn">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zm.04 3H0v15h5V6.5zm7.75 0H8.41v15h5v-8.4c0-3.1 4-3.35 4 0v8.4h5v-10c0-6-6.7-5.75-9-2.8z"/></svg>
+          LinkedIn
+        </a>
+        <a href="http://wa.me/qr/K5U67YYVCSVVF1" target="_blank" aria-label="WhatsApp">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.52 3.48a11.88 11.88 0 00-16.7 0 11.85 11.85 0 00-3.47 8.37c0 2.1.57 4.43 1.66 6.64L1 23l5.55-2.93a11.84 11.84 0 006.66 1.76h.02c2.1 0 4.44-.57 6.64-1.67a11.76 11.76 0 000-16.72zM12 20a7.89 7.89 0 01-4.16-1.19l-.3-.18-3.3 1.74 1.74-3.3-.18-.3A7.96 7.96 0 015 12c0-4.42 3.58-8 8-8a7.95 7.95 0 017.99 7.99c0 4.42-3.57 8-8 8zm4.36-6.46c-.06-.13-.25-.22-.52-.39s-1.27-.63-1.47-.7c-.2-.06-.34-.09-.49.14-.14.22-.53.7-.65.84-.12.14-.22.16-.42.06a6.02 6.02 0 01-1.78-1.1c-.33-.3-.55-.67-.62-.89s-.01-.42.07-.57c.07-.13.08-.22.12-.36a.78.78 0 00-.19-.69c-.2-.23-.48-.5-.7-.7-.15-.13-.32-.06-.5-.02a3.67 3.67 0 00-1.38 1.02c-.48.52-.68 1.16-.77 1.48s-.01.62.12.89a3.4 3.4 0 001.7 1.79c.3.1.54.16.76.23a2.2 2.2 0 012.84-2.45c.15.07.25.17.31.28.08.14.08.26.05.39z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://www.instagram.com/rohith_vh_?igsh=ZmRpanFicmY5MzEy&utm_source=qr" target="_blank" aria-label="Instagram">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.584.013 4.85.07 1.17.053 1.987.234 2.447.4a4.894 4.894 0 011.675 1.02 4.893 4.893 0 011.02 1.675c.165.46.346 1.276.4 2.45.058 1.284.07 1.674.07 4.89s-.013 3.58-.07 4.85c-.053 1.17-.234 1.983-.4 2.448a4.88 4.88 0 01-1.02 1.673 4.88 4.88 0 01-1.673 1.02c-.455.166-1.283.347-2.448.4-1.268.058-1.654.07-4.846.07s-3.58-.013-4.848-.07c-1.17-.053-1.987-.234-2.45-.4a4.9 4.9 0 01-1.674-1.02 4.886 4.886 0 01-1.02-1.675c-.165-.46-.346-1.276-.4-2.45-.057-1.27-.07-1.654-.07-4.85s.013-3.576.07-4.849c.053-1.17.234-1.987.4-2.447a4.91 4.91 0 011.02-1.676 4.891 4.891 0 011.676-1.02c.462-.166 1.278-.346 2.45-.4a45.56 45.56 0 014.851-.07zm0-2.2C8.735 0 8.332.012 7.052.07 5.77.13 4.687.334 3.72.718c-.998.403-1.842.94-2.686 1.784A6.932 6.932 0 00.72 5.232c-.383.967-.589 2.05-.647 3.332C.012 9.67 0 10.07 0 13.94c0 3.87.012 4.27.07 5.55.059 1.282.266 2.365.647 3.332a6.94 6.94 0 001.314 2.465 6.94 6.94 0 002.465 1.317c.967.382 2.05.588 3.33.646 1.281.058 1.683.07 5.54.07s4.258-.012 5.54-.07c1.28-.058 2.363-.264 3.33-.646a6.91 6.91 0 002.466-1.317 6.906 6.906 0 001.314-2.465c.382-.967.59-2.05.65-3.33.058-1.28.07-1.68.07-5.548s-.012-4.268-.07-5.55c-.06-1.28-.267-2.365-.65-3.33A6.92 6.92 0 0020.28.72c-.967-.384-2.05-.59-3.33-.65C15.575.012 15.172 0 12 0zm0 5.835a6.165 6.165 0 100 12.33 6.165 6.165 0 000-12.33zm0 10.165a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 11-2.879 0 1.44 1.44 0 012.88 0z"/></svg>
+          Instagram
+        </a>
+        <a href="mailto:rohithvh1123@gmail.com" aria-label="Email">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 13.5l-11-7V18a3 3 0 003 3h16a3 3 0 003-3V6.5l-11 7zm11-8.66v-.34a2 2 0 00-2-2H3a2 2 0 00-2 2v.34l11 7 11-7z"/></svg>
+          Email
+        </a>
+      </div>
     </section>
-    <section class="documents">
-        <h2>Docs</h2>
-        <a href="https://drive.google.com/file/d/1UuDsUdLyP8f5d1_JhE4upOZNIOIcgkco/view?usp=drivesdk" target="_blank">Resume</a>
-        <a href="https://drive.google.com/file/d/1z8lEbYxzeob927HOkQCbYMVbNaapdeML/view?usp=drivesdk" target="_blank">Portfolio</a>
-    </section>
-    <section class="contact">
-        <h2>Contact Me</h2>
-        <form action="mailto:rohithvh1123@gmail.com" method="POST" enctype="text/plain">
-            <input type="text" name="Name" placeholder="Your Name" required>
-            <input type="email" name="Email" placeholder="Your Email" required>
-            <textarea name="Message" placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+  </main>
+
+  <!-- AOS Animation JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      easing: 'ease-in-out',
+    });
+  </script>
 </body>
 </html>
